@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>Programming Quiz: Prepare Yourself for Interviews</title>
 </head>
 <body>
@@ -15,6 +18,106 @@
             <h2 class="text-primary display-3 my-4">Interview Quiz</h2>
         </div>
     </div>
+
+    <!-- Timer -->
+    <div class="timer text-right d-none">
+        <div class="container">
+            <p>Time Remaining : <span class="display-10 p-3 text-light bg-dark">00:00:00</span></p>
+        </div>
+    </div>
+
+    <!-- Timer End -->
+    <div class="container text-danger timer-end display-10 text-right d-none">
+        Contest Over
+    </div>
+
+    <!-- Menu -->
+    <div class="menu">
+        <pre>
+            <span style="font-size: x-large;">Select Topics :-</span>
+            <span style="font-size: small;">(upto 3)</span>
+        </pre>
+        
+        <div class="container-labels container">
+            <div>
+                <label class="checkbox p-2">
+                    <input type="checkbox" id="chk1" value="option1" > Greedy
+                </label>
+            </div>
+            <div>
+                <label class="checkbox p-2">
+                    <input type="checkbox" id="chk2" value="option2"> Dynamic Programming
+                </label>
+            </div>
+            <div>
+                <label class="checkbox p-2">
+                    <input type="checkbox" id="chk3" value="option3"> Binary Search
+                </label>
+            </div>
+            <div>
+                <label class="checkbox p-2">
+                    <input type="checkbox" id="chk4" value="option4"> Tree
+                </label>
+            </div>
+            <div>
+                <label class="checkbox p-2">
+                    <input type="checkbox" id="chk5" value="option5"> DFS
+                </label>
+            </div>
+            <div>
+                <label class="checkbox p-2">
+                    <input type="checkbox" id="chk6" value="option6"> BFS
+                </label>
+            </div>
+            <div>
+                <label class="checkbox p-2">
+                    <input type="checkbox" id="chk7" value="option7"> Heap
+                </label>
+            </div>
+            <!-- <div>
+                <label class="checkbox p-2">
+                    <input type="checkbox" id="chk8" value="option8"> Random Topic
+                </label>
+            </div> -->
+            <button type="button" class="topic-button btn btn-dark" style="position: absolute; left: 45%">Take the test</button>
+        </div>
+    </div>
+
+    <!-- Questions -->
+    <div class="quiz py-4 d-none">
+        <div class="container">
+
+            <form class="quiz-form text-dark">
+                <div class="question my-5 bg-success">
+                    <p class="lead pt-2 pl-3 pr-3 pb-2">1. Balanced strings are those who have equal quantity of 'L' and 'R' characters. Given a balanced string s split it in the maximum amount of balanced strings. Return the maximum amount of splitted balanced strings.</p>
+                </div>
+                <input type="text" id="ans1" placeholder="Enter your answer">
+                <p class="assign-mark" style="float: right;"></p>
+                <div class="text-ceter text-center">
+                    <input type="submit" class="btn btn-light">
+                </div>
+
+                <div class="my-5 bg-warning">
+                    <p class="lead pt-2 pl-3 pr-3 pb-2">1. Balanced strings are those who have equal quantity of 'L' and 'R' characters. Given a balanced string s split it in the maximum amount of balanced strings. Return the maximum amount of splitted balanced strings.</p>
+                </div>
+                <input type="text" id="ans1" placeholder="Enter your answer">
+                <p class="assign-mark" style="float: right;"></p>
+                <div class="text-ceter text-center">
+                    <input type="submit" class="btn btn-light">
+                </div>
+                
+                <div class="my-5 bg-danger">
+                    <p class="lead pt-2 pl-3 pr-3 pb-2">1. Balanced strings are those who have equal quantity of 'L' and 'R' characters. Given a balanced string s split it in the maximum amount of balanced strings. Return the maximum amount of splitted balanced strings.</p>
+                </div>
+                <input type="text" id="ans1" placeholder="Enter your answer">
+                <p class="assign-mark" style="float: right;"></p>
+                <div class="text-ceter text-center">
+                    <input type="submit" class="btn btn-light">
+                </div>
+
+            </form>
+        </div>
+
 
     <script src = "App.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
