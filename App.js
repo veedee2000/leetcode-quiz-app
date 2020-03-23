@@ -6,6 +6,11 @@ const quiz = document.querySelector('.quiz');
 const timer = document.querySelector('.timer');
 const timerEnd = document.querySelector('.timer-end');
 
+const correctAnswers = ['1','1','2'];
+const user = document.querySelectorAll('input');
+const marks = document.querySelectorAll('.assign-mark');
+let remaining = 3;
+
 const tick = '\u2705';
 const wrong = '\u274C';
 
@@ -27,7 +32,7 @@ checks.forEach((name,index) =>{
     });
 });
 
-let timeNow = 1.5 * 60 * 60;
+let timeNow = 60 * 60;
 let hour,minute,second,addHour,addMinute,addSecond;
 
 topicButton.addEventListener('click',e => {
@@ -55,15 +60,15 @@ topicButton.addEventListener('click',e => {
             clearInterval(startTimer);
             timer.classList.add('d-none');
             timerEnd.classList.remove('d-none');
+            user.forEach((name,index) =>{
+                if(name.type === 'text'){
+                    name.disabled = 'disabled'; 
+                }
+            });
         }
         timeNow--;
     },1000);
 });
-
-const correctAnswers = ['1','1','2'];
-const user = document.querySelectorAll('input');
-const marks = document.querySelectorAll('.assign-mark');
-let remaining = 3;
 
 user.forEach((name,index) =>{
     if(name.type === 'submit'){

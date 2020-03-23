@@ -1,0 +1,12 @@
+.round-small{
+    border-radius: 10px;
+}
+
+.round-large{
+    border-radius: 15px;
+}
+
+.topic-button{
+    position: absolute; 
+    left: 45%;
+}
