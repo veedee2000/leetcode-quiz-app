@@ -15,6 +15,8 @@ const questions = document.querySelectorAll('.questions');
 const intro = document.querySelector('.intro');
 const outro = document.querySelector('.outro');
 const endResult = document.querySelector('.end-result');
+const endForce = document.querySelector('.end-force');
+const star = document.querySelector('.star');
 
 // Initailizing timevariables ----------------------------------
 
@@ -76,6 +78,7 @@ startButton.addEventListener('click',e => {
             });
             intro.classList.add('d-none');
             quiz.classList.add('d-none');
+            star.classList.remove('d-none');
             if(remaining > 0){
                 outro.classList.remove('d-none');
                 timerEnd.classList.remove('d-none');
@@ -86,6 +89,10 @@ startButton.addEventListener('click',e => {
         }
         timeNow--;
     },1000);
+    });
+
+    endForce.addEventListener('click',() => {
+        timeNow = 0;
     });
 
 // Answer Checker Event Handler----------------------------------------
@@ -125,7 +132,7 @@ const outputMissed = () =>{
     user.forEach((name,index) =>{
         if(name.type === 'text'){
             if(name.value !== correctAnswers[index / 2]){
-                endResult.innerHTML += `<p style="font-size: large;" class="p-3">Q${(index / 2) + 1} : Correct Answer = ${correctAnswers[index / 2]}</p>`
+                endResult.innerHTML += `<p style="font-size: large;" class="p-3">Q${(index / 2) + 1} : Correct Answer = ${correctAnswers[index / 2][0]}</p>`
             }
         }
     });

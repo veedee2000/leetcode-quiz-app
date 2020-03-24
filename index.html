@@ -48,7 +48,10 @@
     </div>
 
     <!-- Display correct answers -->
-    <div class="end-result container text-center"></div>
+    <div class="end-result text-center container"></div>
+
+    <!-- Star on github -->
+    <div class="star container text-center d-none" style="font-size: large; position: relative; bottom: 20%;">Liked the Project? &#10024; me on <a href="https://github.com/veedee2000/leetcode-quiz-app" class="bg-dark text-light p-2 round-small" target="_blank">Github</a></div>
 
     <!-- Guidlines -->
     <div class="guidlines">
@@ -67,13 +70,13 @@
                 <li class="p-3">Don't forget to check out the answers of the questions that you might have missed during the contest</li>
             </ul>
             <div class="text-ceter text-center">
-                <button type="button" class="start-button btn btn-primary">Start Test</button>
+                <button type="button" class="start-button btn btn-primary round-small">Start Test</button>
             </div>
         </div>
     </div>
 
     <!-- Questions -->
-    <div class="quiz py-4 d-none">
+    <div class="quiz py-4 d-none container">
         <div class="container">
 
             <form class="quiz-form text-dark">
@@ -105,6 +108,7 @@
                 </div>
 
             </form>
+            <button type="button" class="end-force btn btn-danger round-small" style="float: right;">End Contest</button>
         </div>
 
 
