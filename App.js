@@ -236,7 +236,7 @@ const q = [
 
             Calculate the number of ways to climb 35 stairs.
                     `,
-        answer: [14930352]
+        answer: ['14930352']
 
     }
     // {
