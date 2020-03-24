@@ -40,7 +40,7 @@ startButton.addEventListener('click',e => {
     timer.classList.remove('d-none');
     let sz = 0;
     while(sz < 3){
-        let val = Math.floor(Math.random() * 5);
+        let val = Math.floor(Math.random() * 6);
         if(selectedQuestions.length > 0 && selectedQuestions.includes(val)) continue;
         else{
             selectedQuestions.push(val);
