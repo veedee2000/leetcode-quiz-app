@@ -6,6 +6,10 @@
     border-radius: 15px;
 }
 
+.round-xsmall{
+    border-radius: 5px;
+}
+
 .topic-button{
     position: absolute; 
     left: 45%;

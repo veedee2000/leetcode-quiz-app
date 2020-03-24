@@ -13,9 +13,25 @@
 <body>
     
     <!-- Top Section -->
-    <div class="intro py-3 bg-white text-center">
+    <div class="py-3 bg-white text-center">
         <div class="container">
-            <h2 class="text-primary display-3 my-4">Interview Quiz</h2>
+            <h2 class="intro text-primary display-3 my-4">Interview Quiz</h2>
+        </div>
+    </div>
+
+    <!-- Outro Section -->
+
+    <div class="p-20 bg-white text-center">
+        <div class="container">
+            <h2 class="outro text-primary display-3 my-4 d-none">Thank You!</h2>
+        </div>
+    </div>
+
+    <!-- Congratulations Section -->
+    <div class="p-20 bg-white text-center">
+        <div class="container congratulation d-none">
+            <h2 class="text-primary display-3 my-4">Congratulations!!!</h2>
+            <p style="font-size: large;">You have attempted all the questions correctly</p>
         </div>
     </div>
 
@@ -31,55 +47,28 @@
         Contest has ended
     </div>
 
-    <!-- Menu -->
-    <div class="menu">
+    <!-- Display correct answers -->
+    <div class="end-result container text-center"></div>
+
+    <!-- Guidlines -->
+    <div class="guidlines">
         <pre>
-            <span style="font-size: x-large;">Select Topics :-</span>
-            <span style="font-size: small;">(upto 3)</span>
+            <span style="font-size: xx-large;">Guidlines <span style="font-size: x-large;">:-</span></span>
         </pre>
-        
-        <div class="container-labels container">
-            <div>
-                <label class="checkbox p-2">
-                    <input type="checkbox" id="chk1" value="option1" > Greedy
-                </label>
+        <div class="container">
+            <ul style="font-size:large;">
+                <li class="p-3">You will recieve a total of 3 questions.</li>
+                <li class="p-3">Time Alloted is 15 minutes.</li>
+                <li class="p-3">You are not allowed to change any tabs during the quiz</li>
+                <li class="p-3">Do not use any unfair means to cheat during the quiz</li>
+                <li class="p-3">All answers are to be written in lower case</li>
+                <li class="p-3">If a question is based on <strong>Complexity Analysis</strong> no spacing is to be used. For example, <strong>n^2</strong>, <strong>nlogn^2</strong> are the acceptable answers. Do not use brackets.</li>
+                <li class="p-3">The question is marked <span class="bg-success p-1 round-xsmall text-light">green</span>if the answer is correct and <span class="bg-danger p-1 round-xsmall text-light">red</span> if it is wrong</li>
+                <li class="p-3">Don't forget to check out the answers of the questions that you might have missed during the contest</li>
+            </ul>
+            <div class="text-ceter text-center">
+                <button type="button" class="start-button btn btn-primary">Start Test</button>
             </div>
-            <div>
-                <label class="checkbox p-2">
-                    <input type="checkbox" id="chk2" value="option2"> Dynamic Programming
-                </label>
-            </div>
-            <div>
-                <label class="checkbox p-2">
-                    <input type="checkbox" id="chk3" value="option3"> Binary Search
-                </label>
-            </div>
-            <div>
-                <label class="checkbox p-2">
-                    <input type="checkbox" id="chk4" value="option4"> Tree
-                </label>
-            </div>
-            <div>
-                <label class="checkbox p-2">
-                    <input type="checkbox" id="chk5" value="option5"> DFS
-                </label>
-            </div>
-            <div>
-                <label class="checkbox p-2">
-                    <input type="checkbox" id="chk6" value="option6"> BFS
-                </label>
-            </div>
-            <div>
-                <label class="checkbox p-2">
-                    <input type="checkbox" id="chk7" value="option7"> Heap
-                </label>
-            </div>
-            <!-- <div>
-                <label class="checkbox p-2">
-                    <input type="checkbox" id="chk8" value="option8"> Random Topic
-                </label>
-            </div> -->
-            <button type="button" class="topic-button btn btn-dark round-small">Take the test</button>
         </div>
     </div>
 
@@ -88,28 +77,28 @@
         <div class="container">
 
             <form class="quiz-form text-dark">
-                <div class="question my-5 bg-success round-large">
-                    <p class="lead pt-2 pl-3 pr-3 pb-2">1. Balanced strings are those who have equal quantity of 'L' and 'R' characters. Given a balanced string s split it in the maximum amount of balanced strings. Return the maximum amount of splitted balanced strings.</p>
+                <div class="my-5 round-large container"><span style="font-size: large;">Q1.</span>
+                    <pre class="questions lead "></pre>
                 </div>
-                <input type="text" id="ans1" placeholder="Enter your answer">
+                <input type="text" id="ans1" placeholder="Enter your answer" class="round-xsmall">
                 <p class="assign-mark" style="float: right;"></p>
                 <div class="text-ceter text-center">
                     <input type="submit" class="btn btn-primary round-small">
                 </div>
 
-                <div class="qestion my-5 bg-warning round-large">
-                    <p class="lead pt-2 pl-3 pr-3 pb-2">1. Balanced strings are those who have equal quantity of 'L' and 'R' characters. Given a balanced string s split it in the maximum amount of balanced strings. Return the maximum amount of splitted balanced strings.</p>
+                <div class="my-5 round-large container"><span style="font-size: large;">Q2.</span>
+                    <pre class="questions lead"></pre>
                 </div>
-                <input type="text" id="ans1" placeholder="Enter your answer">
+                <input type="text" id="ans1" placeholder="Enter your answer" class="round-xsmall">
                 <p class="assign-mark" style="float: right;"></p>
                 <div class="text-ceter text-center">
                     <input type="submit" class="btn btn-primary round-small">
                 </div>
                 
-                <div class="question my-5 bg-danger round-large">
-                    <p class="lead pt-2 pl-3 pr-3 pb-2">1. Balanced strings are those who have equal quantity of 'L' and 'R' characters. Given a balanced string s split it in the maximum amount of balanced strings. Return the maximum amount of splitted balanced strings.</p>
+                <div class="my-5 round-large container"><span style="font-size: large;">Q3.</span>
+                    <pre class="questions lead"></pre>
                 </div>
-                <input type="text" id="ans1" placeholder="Enter your answer">
+                <input type="text" id="ans1" placeholder="Enter your answer" class="round-xsmall">
                 <p class="assign-mark" style="float: right;"></p>
                 <div class="text-ceter text-center">
                     <input type="submit" class="btn btn-primary round-small">
