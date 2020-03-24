@@ -225,6 +225,7 @@ const q = [
             Explanation: There are two ways to climb to the top.
             1. 1 step + 1 step
             2. 2 steps
+            
             Example 2:
             
             Input: 3
@@ -249,6 +250,7 @@ const q = [
             Input: text1 = "abcde", text2 = "ace" 
             Output: 3  
             Explanation: The longest common subsequence is "ace" and its length is 3.
+
             Example 2:
 
             Input: text1 = "abc", text2 = "abc"
@@ -271,11 +273,13 @@ const q = [
 
             Input: m = 3, n = 2
             Output: 3
+
             Explanation:
             From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:
             1. Right -> Right -> Down
             2. Right -> Down -> Right
             3. Down -> Right -> Right
+
             Example 2:
 
             Input: m = 7, n = 3
