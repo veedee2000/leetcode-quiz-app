@@ -40,7 +40,7 @@ startButton.addEventListener('click',e => {
     timer.classList.remove('d-none');
     let sz = 0;
     while(sz < 3){
-        let val = Math.floor(Math.random() * 6);
+        let val = Math.floor(Math.random() * 8);
         if(selectedQuestions.length > 0 && selectedQuestions.includes(val)) continue;
         else{
             selectedQuestions.push(val);
@@ -237,7 +237,53 @@ const q = [
             Calculate the number of ways to climb 35 stairs.
                     `,
         answer: ['14930352']
+    },
+    {
+        statement:`
+            Given two strings text1 and text2, return the length of their longest common subsequence.
+            A subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, "ace" is a subsequence of "abcde" while "aec" is not). A common subsequence of two strings is a subsequence that is common to both strings.
+            If there is no common subsequence, return 0.
 
+            Example 1:
+
+            Input: text1 = "abcde", text2 = "ace" 
+            Output: 3  
+            Explanation: The longest common subsequence is "ace" and its length is 3.
+            Example 2:
+
+            Input: text1 = "abc", text2 = "abc"
+            Output: 3
+            Explanation: The longest common subsequence is "abc" and its length is 3.
+
+            Find the LCS for :-
+                "papmretkborsrurgtina"
+                "nsnupotstmnkfcfavaxgl"
+                    `,
+        answer: ['6']
+    },
+    {
+        statement:`
+            A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
+            The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
+            How many possible unique paths are there?
+
+            Example 1:
+
+            Input: m = 3, n = 2
+            Output: 3
+            Explanation:
+            From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:
+            1. Right -> Right -> Down
+            2. Right -> Down -> Right
+            3. Down -> Right -> Right
+            Example 2:
+
+            Input: m = 7, n = 3
+            Output: 28
+
+            Find the result for m = 11, n = 5
+                    `,
+        answer: [`1001`]
     }
     // {
     //     statement: ``
