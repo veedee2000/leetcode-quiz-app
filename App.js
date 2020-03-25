@@ -88,6 +88,8 @@ startButton.addEventListener('click',e => {
             intro.classList.add('d-none');
             quiz.classList.add('d-none');
             star.classList.remove('d-none');
+            star.classList.add('bounceIn');
+            star.classList.add('animated');
             if(remaining > 0){
                 outro.classList.remove('d-none');
                 timerEnd.classList.remove('d-none');
