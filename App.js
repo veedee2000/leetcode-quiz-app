@@ -118,14 +118,21 @@ user.forEach((name,index) =>{
 const eachCorrect = (i) =>{
     user[i - 1].disabled = "disabled";
     questions[(i - 1)/ 2].classList.add('bg-success');
-    questions[(i - 1)/ 2].classList.add('p-2');
-    questions[(i - 1)/ 2].classList.add('round-large');
+    if(questions[(i - 1)/ 2].classList.contains('bg-danger')){
+        questions[(i - 1)/ 2].classList.remove('bg-danger');
+    }
+    else{
+        questions[(i - 1)/ 2].classList.add('p-2');
+        questions[(i - 1)/ 2].classList.add('round-large');
+    }
 };
 
 const eachWrong = (i) =>{
-    questions[(i - 1)/ 2].classList.add('bg-danger');
-    questions[(i - 1)/ 2].classList.add('p-2');
-    questions[(i - 1)/ 2].classList.add('round-large');
+    if(!(questions[(i - 1)/ 2].classList.contains('bg-danger'))){
+        questions[(i - 1)/ 2].classList.add('bg-danger');
+        questions[(i - 1)/ 2].classList.add('p-2');
+        questions[(i - 1)/ 2].classList.add('round-large');
+    }
 };
 
 const outputMissed = () =>{
@@ -289,7 +296,4 @@ const q = [
                     `,
         answer: [`1001`]
     }
-    // {
-    //     statement: ``
-    // }
 ];
