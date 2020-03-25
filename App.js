@@ -12,6 +12,15 @@ const user = document.querySelectorAll('input');
 let remaining = 3;
 const questions = document.querySelectorAll('.questions');
 
+// // Fading 
+
+// $(document).ready(function (){
+//     AOS.init({
+//         easing: 'ease',
+//         duration: 1000
+//     });
+// });
+
 const intro = document.querySelector('.intro');
 const outro = document.querySelector('.outro');
 const endResult = document.querySelector('.end-result');
