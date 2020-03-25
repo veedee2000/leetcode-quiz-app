@@ -4,7 +4,7 @@
 
 Check out the app : <a href="https://heuristic-raman-545996.netlify.com">Link</a>
 
-Guidlines are displayed on the home-page regarding the interface and participation in the quiz.
+**Guidlines** are displayed on the home-page regarding the interface and participation in the quiz.
 
 ### Guidlines :-
 
