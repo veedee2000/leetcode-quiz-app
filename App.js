@@ -138,7 +138,7 @@ const eachWrong = (i) =>{
 const outputMissed = () =>{
     user.forEach((name,index) =>{
         if(name.type === 'text'){
-            if(name.value !== correctAnswers[index / 2]){
+            if(!correctAnswers[index / 2].includes(name.value)){
                 endResult.innerHTML += `<p style="font-size: large;" class="p-3">Q${(index / 2) + 1} : Correct Answer = ${correctAnswers[index / 2][0]}</p>`
             }
         }
